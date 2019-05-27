@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/pic">
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="#FFF"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/enter_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_text_view"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="17dp"
+        android:text="Enter the age to be guessed:"
+        android:textColor="#FFF"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/enter_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enter_text_view"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-21dp"
+        android:layout_marginEnd="265dp"
+        android:layout_marginRight="265dp"
+        android:background="#FCF3CF"
+        android:hint="Enter"
+        android:padding="5dp"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/tries_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enter_edit_text"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="176dp"
+        android:layout_marginLeft="176dp"
+        android:layout_marginTop="-3dp"
+        android:text="Enter the number of tries"
+        android:textColor="#FFF"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/tries_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tries_text_view"
+        android:layout_alignLeft="@+id/enter_edit_text"
+        android:layout_marginTop="-10dp"
+        android:background="#FCF3CF"
+        android:hint="Enter"
+        android:padding="5dp"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/enter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tries_edit_text"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-7dp"
+        android:layout_marginEnd="321dp"
+        android:layout_marginRight="321dp"
+        android:background="#F9E79F"
+        android:onClick="sendMessage"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/random_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enter_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:background="#F9E79F"
+        android:padding="7dp"
+        android:text="Generate age randomly" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="seeScore"
+        android:text="Scores"
+        android:background="#F9E79F"
+        android:layout_margin="7dp"
+
+        android:id="@+id/score_button"/>
+
+
+
+</RelativeLayout>
